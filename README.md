@@ -17,6 +17,8 @@ A full-stack web-based Library Management System built with React (TypeScript) f
 - All user features, plus:
 - Complete book management (Add, Edit, Delete)
 - View all borrow records across the system
+- Approved student borrowing book request
+- Verify student return the borrowed book
 - Generate comprehensive reports
 - Track overdue books system-wide
 - Manage user accounts and permissions
