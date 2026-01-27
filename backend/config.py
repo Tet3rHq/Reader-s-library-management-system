@@ -25,12 +25,14 @@ class Config:
     JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'jwt-secret-key-change-in-production')
     JWT_TOKEN_LOCATION = ['cookies']
     JWT_COOKIE_SECURE = os.getenv('JWT_COOKIE_SECURE', 'False') == 'True'
-    JWT_COOKIE_CSRF_PROTECT = os.getenv('JWT_COOKIE_CSRF_PROTECT', 'True') == 'True'
+    JWT_COOKIE_CSRF_PROTECT = os.getenv('JWT_COOKIE_CSRF_PROTECT', 'False') == 'True'
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=int(os.getenv('JWT_ACCESS_TOKEN_EXPIRES', '1')))
-    JWT_COOKIE_SAMESITE = 'Lax'
+    JWT_COOKIE_SAMESITE = os.getenv('JWT_COOKIE_SAMESITE', 'Lax')
     
     # CORS Configuration
-    CORS_ORIGINS = os.getenv('FRONTEND_URL', 'http://localhost:3000')
+    # Support multiple origins: can be a comma-separated list or a single URL
+    frontend_url = os.getenv('FRONTEND_URL', 'https://reader-s-library-management-system.vercel.app, http://localhost:3000')
+    CORS_ORIGINS = [url.strip() for url in frontend_url.split(',')]
     CORS_SUPPORTS_CREDENTIALS = True
 
 
