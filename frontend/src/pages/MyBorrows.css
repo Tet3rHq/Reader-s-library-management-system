@@ -1,0 +1,79 @@
+.my-borrows-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.filter-section {
+  margin-bottom: 2rem;
+}
+
+.status-filter {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.status-filter:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.records-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.records-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.records-table th {
+  background-color: #f7fafc;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.records-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.records-table tr:hover {
+  background-color: #f7fafc;
+}
+
+.return-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.return-btn:hover {
+  background-color: #5568d3;
+}
+
+@media (max-width: 768px) {
+  .records-table {
+    overflow-x: scroll;
+  }
+
+  .records-table table {
+    min-width: 800px;
+  }
+}
