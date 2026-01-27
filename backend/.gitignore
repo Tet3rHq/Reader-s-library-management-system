@@ -58,3 +58,6 @@ htmlcov/
 
 # Migrations (optional - uncomment to ignore)
 migrations/
+
+# Static files
+uploads/*
