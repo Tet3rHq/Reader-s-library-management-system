@@ -37,4 +37,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
 
 # Run the application
 # Render will set the PORT environment variable, default to 5000
-CMD ["sh", "-c", "python -c \"from app import create_app; app = create_app(); app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))\""]
+CMD ["sh", "-c", "python -c \"import os; from app import create_app; app = create_app(); app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))\""]

@@ -3,7 +3,7 @@ import type { ApiError } from '../types';
 
 // Create axios instance with default config
 const apiClient: AxiosInstance = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://library-backend-latest.onrender.com/api',
   withCredentials: true, // Important: Send cookies with requests
   headers: {
     'Content-Type': 'application/json',
