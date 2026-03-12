@@ -55,7 +55,7 @@ const Login: React.FC = () => {
                   </g>
                 </svg>
               </div>
-              <h1 className="brand-title">LibraVerse</h1>
+              <h1 className="brand-title">Reader's Library Management System</h1>
               <p className="brand-tagline">Your Gateway to Knowledge</p>
             </div>
             <div className="feature-list">

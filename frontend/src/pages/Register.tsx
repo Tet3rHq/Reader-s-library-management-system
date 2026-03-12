@@ -81,7 +81,7 @@ const Register: React.FC = () => {
                   </g>
                 </svg>
               </div>
-              <h1 className="brand-title">LibraVerse</h1>
+              <h1 className="brand-title">Reader's Library Management System</h1>
               <p className="brand-tagline">Your Gateway to Knowledge</p>
             </div>
             <div className="feature-list">
@@ -109,7 +109,7 @@ const Register: React.FC = () => {
           <div className="auth-card">
             <div className="auth-header">
               <h2>Create Account</h2>
-              <p>Join LibraVerse and start exploring</p>
+              <p>Join Reader's Library Management System and start exploring</p>
             </div>
 
             {error && <div className="error-message">{error}</div>}
