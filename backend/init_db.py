@@ -33,25 +33,25 @@ def seed_database():
     
     with app.app_context():
         # Check if admin user already exists
-        admin = User.query.filter_by(username='kca-library').first()
+        admin = User.query.filter_by(username='lmsadmin').first()
         
         if not admin:
             # Create admin user with specified credentials
             # Get admin password from environment variable or use default (for initial setup)
-            admin_password = os.getenv('ADMIN_PASSWORD', 'KcaLibrary@2024')
+            admin_password = os.getenv('ADMIN_PASSWORD', 'Admin12345')
             
             admin = User(
-                username='kca-library',
-                email='library@kcau.ac.ke',
+                username='lmsadmin',
+                email='lmsadmin@gmail.com',
                 role='admin'
             )
             admin.set_password(admin_password)
             db.session.add(admin)
-            print("✓ Admin user created (username: kca-library, email: library@kcau.ac.ke)")
+            print("✓ Admin user created (username: lmsadmin, email: lmsadmin@gmail.com)")
         else:
             print("✓ Admin user already exists")
         
-        # Sample books data
+       # Sample books data
         sample_books = [
             {
                 'title': 'To Kill a Mockingbird',
@@ -141,7 +141,7 @@ def seed_database():
                 'year': 1997,
                 'total_copies': 6,
                 'description': 'The first book in the Harry Potter series.',
-                'cover_image': 'Harry Potter and the Sorcerer\'s Stone.webp' 
+                'cover_image': 'Harry Potter and the Sorcerer\'s Stone.webp'
             },
             {
                 'title': 'The Design of Everyday Things',
@@ -183,8 +183,8 @@ def seed_database():
         db.session.commit()
         print("\n✓ Database seeding completed successfully!")
         print("\nAdmin Account Created:")
-        print("  Username: kca-library")
-        print("  Email: library@kcau.ac.ke")
+        print("  Username: lmsadmin")
+        print("  Email: lmsadmin@gmail.com")
         print("  (Password set from ADMIN_PASSWORD environment variable or default)")
 
 
