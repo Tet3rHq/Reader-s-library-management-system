@@ -64,7 +64,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
       
       <footer className="footer">
-        <p>&copy; 2024 Library Management System. Final Year Project.</p>
+        <p>&copy; 2026 Library Management System. Final Year Project.</p>
       </footer>
     </div>
   );

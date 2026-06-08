@@ -23,6 +23,34 @@ A full-stack web-based Library Management System built with React (TypeScript) f
 - Track overdue books system-wide
 - Manage user accounts and permissions
 
+## Tools and Technologies
+
+### Programming Languages
+- **Python** - Backend server and API development
+- **JavaScript/TypeScript** - Frontend user interface development
+
+### Frameworks/Platforms
+#### Backend
+- **Flask 3.0** - Lightweight WSGI web application framework
+- **Flask-JWT-Extended** - JWT (JSON Web Token) authentication with cookie-based token storage
+- **Flask-SQLAlchemy** - ORM (Object-Relational Mapping) for database operations
+- **Flask-Migrate** - Database migration management
+- **Flask-CORS** - Cross-Origin Resource Sharing support
+- **bcrypt** - Password hashing library for secure password storage
+
+#### Frontend
+- **React 19** - UI library for building user interfaces
+- **TypeScript** - Typed superset of JavaScript
+- **Vite** - Next-generation frontend build tool
+- **React Router v7** - Client-side routing for single-page applications
+- **Axios** - HTTP client for API requests with cookie support
+- **Custom CSS** - Styling with responsive design
+
+### Databases
+- **PostgreSQL** - Primary production database (relational database)
+- **SQLite** - Development and testing database
+- **SQLAlchemy** - Database ORM providing abstract database layer
+
 ## Tech Stack
 
 ### Frontend

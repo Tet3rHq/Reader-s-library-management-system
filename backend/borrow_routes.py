@@ -59,7 +59,7 @@ def borrow_book():
         
         # Calculate due date (14 days from now)
         # Store as naive datetime for SQLite compatibility
-        due_date = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(days=14)
+        due_date = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(days=1)
         
         # Create borrow record with pending status
         borrow_record = BorrowRecord(
